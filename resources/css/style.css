@@ -8,9 +8,14 @@ html {
   font-style: normal;
   -webkit-font-kerning: auto;
   font-kerning: auto;
-  background-color:light-purple;
+  /*background-color: black;*/
 
   /*color: hsl(240, 100%, 20%); /*Dark Blue Font Color*/
+}
+
+body {
+  background-color: black;
+  color: white;
 }
 
 /*Navigation*/
@@ -19,11 +24,15 @@ html {
   justify-content: space-between;
   font-size: 1.1rem;
   font-weight: 600;
-}
+  }
 
 .navbar-default .navbar-nav > .active > a,
 .navbar-default .navbar-nav > .active > a:active {
-  background-color: light-purple;
+  background-color: #03a9f4;
+  color: purple;
+}
+
+.navbar-default .navbar-nav>li>a {
   color: purple;
 }
 
@@ -31,6 +40,11 @@ html {
   display: flex;
   justify-content: flex-end;
   align-items: flex-end;
+}
+
+.spacer {
+  width: 100%;
+  padding-top: 3rem;
 }
 
 /*Jumbotron*/
@@ -46,7 +60,6 @@ html {
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
-
 }
 
 .jumbotron-bg {
@@ -66,7 +79,7 @@ html {
   background-image: url("../images/jumbotron-crafts.jpg");
 }
 
-.jumbotron-duffel {
+.jumbotron-fine {
   background-image: url("../images/jumbotron-fine.jpg");
 }
 
@@ -82,7 +95,7 @@ html {
 .jumbotron p {
   max-width: 51.3rem;
   font-size: 2rem;
-  color: #2e6da4;
+  color: #03a9f4;
   text-shadow: 2px 2px 0 #000;
   margin: auto;
 }
@@ -100,6 +113,7 @@ html {
   width: 20rem;
   height: 4rem;
   background-color: purple;
+  border-color: #03a9f4;
   box-shadow: 0 0 3px rgba(0, 0, 0, 1);
   transition: all 0.5s ease;
   align-items: center;
@@ -119,12 +133,21 @@ html {
   color: white;
 }
 
+a {
+  color: purple;
+  font-size: 1.1rem;
+}
+
 /*Bootstrap Grid */
 .row {
   max-width: 100%;
   height: auto;
   margin: 5.85rem;
 }
+
+/*.container-fluid {
+  justify-content: center;
+}*/
 
 .image-container {
   width: 100%;
@@ -142,7 +165,6 @@ html {
   width: 100%;
   height: auto;
   opacity: 0.5;
-
 }
 
 .image-container:hover img {
@@ -166,11 +188,11 @@ h3 {
 
 .categories li {
   line-height: 1.4;
-  color: rgba(0, 0, 0, 0.7);
+  color: white;
 }
 
 .categories h3 {
-  color: #2e6da4;
+  color: #03a9f4;
 }
 
 /*Footer*/
@@ -200,7 +222,7 @@ footer {
   width: 100%;
   height: 5rem;
   background-color: light-purple;
-  color: black;
+  color: white;
   font-style: italic;
   text-align: center;
   justify-content: center;
@@ -210,6 +232,7 @@ footer {
 @media only screen and (min-width: 320px) and (max-width: 760px) {
   .jumbotron .container-fluid {
     width: 100%;
+    /*justify-content: center;*/
   }
 
   .jumbotron h1 {
@@ -223,5 +246,4 @@ footer {
   .row {
     margin: auto;
   }
-
 }
