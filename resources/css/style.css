@@ -24,17 +24,55 @@ body {
   justify-content: space-between;
   font-size: 1.1rem;
   font-weight: 600;
-  }
+}
 
-.navbar-default .navbar-nav > .active > a,
-.navbar-default .navbar-nav > .active > a:active {
-  background-color: #03a9f4;
+.navbar-fixed {
+  top: 0;
+  z-index: 100;
+  position: fixed;
+  width: 100%;
+}
+
+/*.navbar-default .navbar-nav>.active>a,*/
+.navbar-default .navbar-nav>.active>a:link {
+  background-color: white;
   color: purple;
 }
 
-.navbar-default .navbar-nav>li>a {
+/*.navbar-default .navbar-nav>.active>a,*/
+.navbar-default .navbar-nav>.active>a:visited {
+  background-color: white;
+  color: #03a9f4;
+}
+
+/*.navbar-default .navbar-nav>.active>a,*/
+.navbar-default .navbar-nav>.active>a:hover {
+  background-color: #91d8f9;
+  color: white;
+}
+
+.navbar-default .navbar-nav > li > a,
+.navbar-default .navbar-nav > .active > li > a:focus,
+.navbar-default .navbar-nav > .active > li > a:hover {
+  /*background-color: #91d8f9;*/
   color: purple;
 }
+
+/*.navbar-default .navbar-nav>li>a:link {
+background-color: #91d8f9;
+color: purple;
+}
+
+.navbar-default .navbar-nav>li>a:visited {
+background-color: #91d8f9;
+color: #03a9f4;
+}
+
+.navbar-default .navbar-nav>li>a:hover {
+background-color: #91d8f9;
+color: light-gray;
+}*/
+
 
 .navbar-brand {
   display: flex;
@@ -123,19 +161,28 @@ body {
 
 .btn:hover {
   box-shadow: 0 0 12px rgba(0, 0, 0, 0.9);
+  background-color: purple;
 }
 
 .btn:active {
   box-shadow: 0 0 0 rgba(0, 0, 0, 0.5);
 }
 
+/*.btn:visited {
+background-color: #03a9f4;
+}*/
+
 .btn a {
   color: white;
 }
 
 a {
-  color: purple;
+  color: #03a9f4;
   font-size: 1.1rem;
+}
+
+h4 {
+  color: #03a9f4;
 }
 
 /*Bootstrap Grid */
@@ -146,7 +193,7 @@ a {
 }
 
 /*.container-fluid {
-  justify-content: center;
+justify-content: center;
 }*/
 
 .image-container {
@@ -176,7 +223,7 @@ a {
 h2 {
   font-size: 1.7rem;
   font-weight: bold;
-  color: purple;
+  color: #03a9f4;
   margin: 1.43rem 2rem;
   /*border: 2px solid blue;*/
 }
@@ -186,17 +233,27 @@ h3 {
   font-weight: bold;
 }
 
-.categories li {
+.categories h3 {
+  color: purple;
+}
+
+.categories2 h3 {
+  color: purple;
+}
+
+.categories, .categories2  li {
   line-height: 1.4;
   color: white;
 }
 
-.categories h3 {
-  color: #03a9f4;
+.categories2 li {
+  text-align: center;
 }
 
+
+
 /*Footer*/
-.trouble {
+.joinus {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -209,7 +266,7 @@ h1 {
   text-align: center;
 }
 
-.trouble p {
+.joinsus p {
   width: 42rem;
   height: auto;
   text-align: center;
@@ -221,7 +278,6 @@ footer {
   display: flex;
   width: 100%;
   height: 5rem;
-  background-color: light-purple;
   color: white;
   font-style: italic;
   text-align: center;
@@ -229,7 +285,7 @@ footer {
   align-items: center;
 }
 
-@media only screen and (min-width: 320px) and (max-width: 760px) {
+@media only screen and (min-width: 320px) and (max-width: 780px) {
   .jumbotron .container-fluid {
     width: 100%;
     /*justify-content: center;*/
