@@ -31,7 +31,7 @@ $(document).ready(function(){
       if ($(window).scrollTop() > 700) {
         $('.navbar').addClass('navbar-fixed');
       }
-      if ($(window).scrollTop() < 701) {
+      if ($(window).scrollTop() < 710) {
         $('.navbar').removeClass('navbar-fixed');
       }
 

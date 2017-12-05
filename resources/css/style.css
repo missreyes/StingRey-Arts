@@ -82,7 +82,7 @@ color: light-gray;
 
 .spacer {
   width: 100%;
-  padding-top: 3rem;
+  padding-top: 5rem;
 }
 
 /*Jumbotron*/
@@ -105,7 +105,6 @@ color: light-gray;
 }
 
 .jumbotron-book {
-  /*opacity: 0.5;*/
   background-image: url("../images/jumbotron-book.jpg");
 }
 
@@ -192,9 +191,9 @@ h4 {
   margin: 5.85rem;
 }
 
-/*.container-fluid {
+.container-fluid {
 justify-content: center;
-}*/
+}
 
 .image-container {
   width: 100%;
